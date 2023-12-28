@@ -184,7 +184,7 @@
 
 import axios from 'axios';
 
-var baseURL = 'http://172.20.10.4:42600/api/'
+var baseURL = 'http://172.31.98.103:42600/api/'
 
 const axios_mysql = axios.create({
     baseURL: baseURL,
@@ -196,6 +196,7 @@ const axios_mysql = axios.create({
     withCredentials: true,
     crossDomain: true
 });
+
 
 async function postLogin(data) {
     console.log('data', data)
